@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="#">
+    <label for="text">TEXT :</label>
+    <input type="text" id="text" placeholder="내용을 입력해주세요"> <!-- input text 창-->
+    <br>
+    <label for="number">NUMBER:</label> <!-- 라벨을 눌러도 연결된 for가 클릭되게 해줌. 편의성-->
+    <input type="number" name="" id="number">
+    <!--딕셔너리 형태로 넘겨줌 name 이 키값, id 는-->
+    <br>
+    PASSWORD: <input type="password"><br>
+    EMAIL: <input type="email" name="" id="">
+    <input type="submit">
+    <br>
+    DATE: <input type="date" id=""><br>
+    <input type="radio" name="language" value="1">HTML
+    <!-- name: key value : value 딕셔너리 형태 자료형-->
+    <input type="radio" name="language" value="2">CSS
+    <input type="radio" name="language" value="3">JS <br>
+    <select name="country" >
+      <option value="1">한국</option> <!-- option 은 select안에 있어야 한다. option의 키값을 select가 가지고 있기떄문이다.-->
+      <option value="2">중국</option>
+      <option value="3">미국</option>
+    </select><br>
+    <input type="checkbox" name="option" value="1">체크1
+    <input type="checkbox" name="option" value="2">체크2
+    <input type="checkbox" name="option" value="3">체크3 <br>
+
+  </form>
+
+
+</body>
+
+</html>
