@@ -1,0 +1,53 @@
+.font-1 {
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: italic;
+}
+
+.font-2 {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+}
+
+.font-3 {
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.font-4 {
+  font-size: small;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.font-5 {
+  /* font shorthand */
+  /* font font-style font-weight line-height font-size(필수) font-family(필수) */
+
+  font: italic 2rem "Fira Code"
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  color: white;
+}
+
+.box > p {
+  text-align: center;
+  /*  line-height 를 부모의 height 만큼 주면 텍스트를 수직 중앙정렬 하기에 용이하다.
+  (단, 텍스트가 한줄일 경우에 */
+  line-height: 100px;
+}
+
+body {
+  height: 5000px;
+
+}
+
+.web-font {
+  font-family: 'Single Day', cursive;
+}

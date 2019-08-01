@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unit</title>
+  <link rel="stylesheet" href="01_unit.css">
+</head>
+
+<body>
+  <h1>단위를 알아봅시다.</h1>
+  <p>Default font 기본단위는 16px 입니다. </p>
+
+  <!-- 24px : 20 * 1.2  -->
+  <ol>
+    <li>1.2rem</li>
+  </ol>
+
+  <!-- 상대단위 em : 24 * 1.2(부모의사이즈) * 1.2 = 28.8 px-->
+  <ul>
+    <li>1.2em</li>
+  </ul>
+
+  <!-- vw, vh 상대적으로 밸류를 유지 시킴.-->
+  <span class="vw"> <!-- 아무 의미 없는 상자 div와는 조금 다름.-->
+    10vw <!-- 너비에 따른 비율 -->
+
+  </span>
+  <span class="vh">10vh <!-- 높이에 따른 비율 --></span>
+  <div class="div-vw"></div>
+  <div class="div-vh"></div>
+
+  <!-- vmin -->
+  <div class="div-vmin"></div>
+</body>
+
+</html>

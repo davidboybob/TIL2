@@ -1,0 +1,43 @@
+html {
+  font-size: 20px;
+}
+/* 16px --> 20픽셀로 기본값을 변경  */
+
+ol,
+ol li {
+  font-size: 1.2rem;
+}
+
+ul,
+ul li {
+  font-size: 1.2em;
+}
+/* .이 클래스 선택하는 명령 */
+.vw {
+  font-size: 10vw; /*  1/10 */
+} 
+
+.vh {
+  font-size: 10vh
+}
+
+.div-vw {
+  width: 10vw;
+  height: 10vw;
+  background-color: rgb(1, 1, 243, 0.50000);
+}
+
+.div-vh {
+  width: 10vh;
+  height: 10vh;
+  background-color: rgb(255, 110, 139, 0.2 );
+}
+
+.div-vmin {
+  width: 10vmin;
+  height: 10vmin;
+  background-color: #04FFEC;
+}
+
+
+
