@@ -4,6 +4,7 @@ sys.stdin = open('input_2578.txt', 'r')
 B2 = [[0]*5 for _ in range(5)]
 count = 0
 check = 0
+lst = [0] * 12:
 for i in range(5):
     
     B = list(map(int, input().split()))
@@ -27,21 +28,8 @@ for a in range(5):
                 Sum1 += B2[j][4-j]
                 Sum2 += B2[i][j]
                 Sum3 += B2[j][i]
-                if Sum==0 and Sum1==0 and Sum2==0 and Sum3==0:
-                    check +=1
-                if check >= 3:
-                    print('bingo')
-                    print(count)
-                    break
-            if check >= 3:
-         
-               break
-        if check >= 3:
-         
-            break            
-    if check >= 3:
-        
-        break            
-            
                 
-    
+                    
+                
+                
+               
