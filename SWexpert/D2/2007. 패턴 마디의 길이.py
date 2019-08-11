@@ -4,9 +4,10 @@ sys.stdin = open('input_2007.txt', 'r')
 TC = int(input())
 
 for k in range(TC):
+    lst = [0] * 10   
     text = input()
-    txt = text[0]
-    count = 1
-    for i in range(1, len(text)):
-        count += 1
-        
+    txt_lst = []
+
+    for i in range(10):
+        txt_lst += text[i]
+    print(txt_lst)
