@@ -10,6 +10,6 @@ for i in range(1 << N): #i 는 부분집합을 표현하는 값을 의미
 
     if Sum == 0:
         for j in range(N):
-            if i & (1<<j):
+            if i & (1 << j):
                 print(arr[j], end=' ')
         print()

@@ -10,11 +10,11 @@ for k in range(T):
 
     lst = []
     for i in range(0, len(lists)-1):
-       min = i
-       for j in range(i+1, len(lists)):
-           if lists[min] > lists[j]:
-               min = j
-       lists[i], lists[min] = lists[min], lists[i]
+        min = i
+        for j in range(i+1, len(lists)):
+            if lists[min] > lists[j]:
+                min = j
+        lists[i], lists[min] = lists[min], lists[i]
 
     for i in range((len(lists)//2)):
         lst.append(lists[N-i-1])
