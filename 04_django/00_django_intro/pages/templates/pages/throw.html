@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/pages/catch/" method="GET"> 
+  <label for="message">Throw</label>
+  <input type="text" id ="message" name="message"> <!-- name 값으로 데이터 주고 받는데 key값이다. id는 java 이용시 활용-->
+  <input type="submit"> <!-- action쪽으로 데이터를 전달-->
+</form>
+{% endblock content %}

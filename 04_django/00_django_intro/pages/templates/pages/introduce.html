@@ -1,12 +1,18 @@
+{% extends 'base.html' %}
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Introduce</title>
 </head>
 <body>
-  <h1>Hi django!!</h1>
+  {% block content %}
+  <h1>Introduce 자기소개 페이지</h1>
+  <h1> {{ name }}의 나이는 {{ age }}입니다. </h1>
+  {% endblock content %}
 </body>
 </html>

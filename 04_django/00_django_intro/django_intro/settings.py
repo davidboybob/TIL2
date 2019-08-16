@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     # 1. loacal apps
     # 2. Third party apps
     # 3. Django apps
+    'utilities.apps.UtilitiesConfig',
     'pages.apps.PagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware', # 보안 검증 
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'django_intro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'django_intro', 'templates')], #추가 경로 생성 가능한 곳.
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
