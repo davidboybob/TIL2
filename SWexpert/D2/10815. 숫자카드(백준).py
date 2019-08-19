@@ -1,8 +1,6 @@
 import sys
 sys.stdin = open('input_10815.txt', 'r')
 
-
-
 NS = input()
 Hand = list(map(int, input().split()))
 NC = input()

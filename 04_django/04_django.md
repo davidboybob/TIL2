@@ -64,19 +64,21 @@
          pip list #환경 확인
          ```
    
+         
+   
          2. 
    
          ```python
-   >interpreter 환경설정을 3.7.3 venv로 잡아주자.
+         >interpreter 환경설정을 3.7.3 venv로 잡아주자.
          ```
-         
+   
          3. 
    
          ```python
-   #visualcode 업데이트 깨알 꿀팁
+         #visualcode 업데이트 깨알 꿀팁
          # json setting 들어가서 `"terminal.integrated.cwd": "${workspaceFolder}",`을 추가해 주자
          ```
-         
+   
       3. django 설치하기
    
          1. `pip install django`
@@ -84,14 +86,14 @@
       4. `django-admin startproject (이름 예시 + .(현재폴더에만생성))`
    
          1. ex) `django-admin startproject django_intro .`
-      2. `manage.py` 파일이 생성되고, `diango_intro`폴더 안에 4가지의 파일이 생성된다.(ex) \__init__.py 등등)
-      
+         2. `manage.py` 파일이 생성되고, `diango_intro`폴더 안에 4가지의 파일이 생성된다.(ex) \__init__.py 등등)
+   
       5. django 실행하기
    
          1. `python manage.py runserver` 명령어 입력후 
-      2. `Starting development server at http://127.0.0.1:8000` 을 새로운 창으로 띄워준다.
+         2. `Starting development server at http://127.0.0.1:8000` 을 새로운 창으로 띄워준다.
          3. 종료시 `ctrl + c` 키로 종료 시켜 주자
-      
+   
       6. `__init__.py` : 초기화 파일, `setting.py`: 작업공간, `wsgi.py`: 아마존에 서버를 올릴 때 사용.
    
    3. MVC ( Model View Controler ) --> MTV(장고만)(Model Template View) 장고의 프레임 워크
@@ -155,6 +157,12 @@
    
          
    
-         
+      -의존성 기록(구성환경 리스트 목록 만들기)
    
-         
+      pip freeze > requirements.txt
+      
+      -의존성 설치
+      
+      pip install -r requirements.txt
+      
+      
