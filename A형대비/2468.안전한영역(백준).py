@@ -37,7 +37,6 @@ for H in range(Min, Max):
         for j in range(N):
             if area[i][j] <= H or flooded_area[i][j] == H: continue
             cnt += 1
-
             BFS(i, j, H)
     ans = max(ans, cnt)
 print(ans)

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b6310f8-9394-46b2-8ca7-1bb68a8f4b30" name="Default Changelist" comment="" />
+    <list default="true" id="4b6310f8-9394-46b2-8ca7-1bb68a8f4b30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/11724.연결요소의개수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15686.치킨배달.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1987.알파벳.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2178.미로탐색(백준)try1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7576.토마토.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_11724.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_15656.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_7576.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_island.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/섬의 개수 구하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2468.안전한영역(백준).py" beforeDir="false" afterPath="$PROJECT_DIR$/2468.안전한영역(백준).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_2468.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input_2468.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +58,49 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1966334044">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="8" />
+          <entry key="txt" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="12" />
+          <entry key="py" value="3288" />
+          <entry key="txt" value="53" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="Python" value="3288" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.8030864">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/2667.단지붙이기(백준).py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
-                  <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+                <state relative-caret-position="60">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
                   <folding>
                     <marker date="1567644207856" expanded="true" signature="67:349" ph="..." />
                   </folding>
@@ -64,23 +111,72 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/2468.안전한영역(백준).py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+                <state relative-caret-position="320">
+                  <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                    <marker date="1567641831260" expanded="true" signature="126:524" ph="..." />
+                    <marker date="1567754857070" expanded="true" signature="126:524" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/2178.미로탐색(백준).py">
+            <entry file="file://$PROJECT_DIR$/섬의 개수 구하기.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+                <state relative-caret-position="200">
+                  <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
                   <folding>
-                    <element signature="e#0#29#0" expanded="true" />
+                    <marker date="1567749340610" expanded="true" signature="68:354" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/1987.알파벳.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="23" column="12" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/7576.토마토.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="140">
+                  <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/input_7576.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/15686.치킨배달.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="280">
+                  <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/11724.연결요소의개수.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="155">
+                  <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+                  <folding>
+                    <marker date="1567746063796" expanded="true" signature="147:150" ph="..." />
+                    <marker date="1567746063796" expanded="true" signature="401:523" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -91,6 +187,33 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/input_11724.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/input_island.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="520">
+                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/input_15656.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="1" selection-start-column="1" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/input_2178.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -99,11 +222,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/input_2468.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+                <state relative-caret-position="160">
+                  <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/input_7576.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -119,16 +251,33 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/단지붙이기.py" />
         <option value="$PROJECT_DIR$/input_2178.txt" />
         <option value="$PROJECT_DIR$/2178.미로탐색(백준).py" />
-        <option value="$PROJECT_DIR$/input_2468.txt" />
         <option value="$PROJECT_DIR$/2468.안전한영역.py" />
-        <option value="$PROJECT_DIR$/2468.안전한영역(백준).py" />
         <option value="$PROJECT_DIR$/2667.단지붙이기(백준).py" />
+        <option value="$PROJECT_DIR$/15686. 치킨배달.py" />
+        <option value="$PROJECT_DIR$/input_15656.txt" />
+        <option value="$PROJECT_DIR$/15656.치킨배달.py" />
+        <option value="$PROJECT_DIR$/15686.치킨배달.py" />
+        <option value="$PROJECT_DIR$/연결요소의개수.py" />
+        <option value="$PROJECT_DIR$/input_11724.txt" />
+        <option value="$PROJECT_DIR$/11724.연결요소의개수.py" />
+        <option value="$PROJECT_DIR$/2178.미로탐색(백준)try1.py" />
+        <option value="$PROJECT_DIR$/input_island.txt" />
+        <option value="$PROJECT_DIR$/섬의 개수 구하기.py" />
+        <option value="$PROJECT_DIR$/알파벳.py" />
+        <option value="$PROJECT_DIR$/input_2468.txt" />
+        <option value="$PROJECT_DIR$/2468.안전한영역(백준).py" />
+        <option value="$PROJECT_DIR$/1987.알파벳.py" />
+        <option value="$PROJECT_DIR$/input_7576.txt" />
+        <option value="$PROJECT_DIR$/7576.토마토.py" />
       </list>
     </option>
   </component>
@@ -136,6 +285,9 @@
     <option name="x" value="56" />
     <option name="width" value="942" />
     <option name="height" value="1087" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -157,10 +309,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\student\Desktop\TIL2\A형대비" />
       <recent name="C:\Users\student\Desktop\A형대비" />
     </key>
   </component>
@@ -176,8 +330,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2667.단지붙이기(백준)">
-    <configuration name="단지붙이기" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.2468.안전한영역(백준)">
+    <configuration name="섬의 개수 구하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="A형대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -189,7 +343,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\student\Desktop\A형대비\2667.단지붙이기(백준).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/섬의 개수 구하기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1987.알파벳" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="A형대비" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1987.알파벳.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,7 +394,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2468.안전한영역" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="2178.미로탐색(백준)try1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="A형대비" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,7 +406,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\student\Desktop\A형대비\2468.안전한영역(백준).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2178.미로탐색(백준)try1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,41 +436,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2667.단지붙이기(백준)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="A형대비" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2667.단지붙이기(백준).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.단지붙이기" />
+      <item itemvalue="Python.2178.미로탐색(백준)try1" />
       <item itemvalue="Python.2178.미로탐색(백준)" />
-      <item itemvalue="Python.2468.안전한영역" />
+      <item itemvalue="Python.섬의 개수 구하기" />
+      <item itemvalue="Python.1987.알파벳" />
       <item itemvalue="Python.2468.안전한영역(백준)" />
-      <item itemvalue="Python.2667.단지붙이기(백준)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.2667.단지붙이기(백준)" />
         <item itemvalue="Python.2468.안전한영역(백준)" />
-        <item itemvalue="Python.2468.안전한영역" />
+        <item itemvalue="Python.1987.알파벳" />
+        <item itemvalue="Python.섬의 개수 구하기" />
+        <item itemvalue="Python.2178.미로탐색(백준)try1" />
         <item itemvalue="Python.2178.미로탐색(백준)" />
-        <item itemvalue="Python.단지붙이기" />
       </list>
     </recent_temporary>
   </component>
@@ -313,21 +467,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-8" width="1873" height="1096" extended-state="6" />
+    <frame x="55" y="-8" width="1873" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11716621" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1040872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298647" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32882413" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958376" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298647" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -342,17 +496,27 @@
     <entry file="file://$PROJECT_DIR$/input_2667.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_2178.txt">
+    <entry file="file://$PROJECT_DIR$/15686. 치킨배달.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_15656.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_2468.txt">
+    <entry file="file://$PROJECT_DIR$/input_11724.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_2178.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -366,24 +530,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/input_island.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15686.치킨배달.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11724.연결요소의개수.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <marker date="1567746063796" expanded="true" signature="147:150" ph="..." />
+            <marker date="1567746063796" expanded="true" signature="401:523" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2178.미로탐색(백준)try1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+            <marker date="1567748182829" expanded="true" signature="108:543" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2468.안전한영역(백준).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="320">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1567641831260" expanded="true" signature="126:524" ph="..." />
+            <marker date="1567754857070" expanded="true" signature="126:524" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/섬의 개수 구하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <marker date="1567749340610" expanded="true" signature="68:354" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2667.단지붙이기(백준).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <marker date="1567644207856" expanded="true" signature="67:349" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1987.알파벳.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_2468.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_7576.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7576.토마토.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
