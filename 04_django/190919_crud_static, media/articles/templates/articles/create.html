@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<img src="{% static 'images/image2.jpg' %}" alt="image2">
+<h1 class="text-center">NEW PAGE</h1>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <label for="title">Title</label>
+  <input type="text" name="title" id="title" required><br>
+  <label for="content">Content</label>
+  <textarea name="content" id="content" cols="30" rows="5"></textarea><br>
+  <label for="image">IMAGE</label>
+  <input type="file" name="image" id="image" accept="image/*">
+  <input type="submit" value="submit">
+</form>
+{% endblock content %}
+

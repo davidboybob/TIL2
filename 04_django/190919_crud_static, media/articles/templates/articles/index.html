@@ -1,0 +1,20 @@
+{% extends 'base.html' %} <!-- extends는 최상단-->
+<!-- static 파일 경로 찾기, extends 아래에 불러와야함. -->
+{% load static %}
+
+{% block content %}
+  <img src="{% static 'articles/images/image.jpg' %}" alt="image">
+  <h1 class="text-center">Articles</h1>
+  <a href="{% url 'articles:create' %}">New</a>
+  <hr>
+  {% for article in articles %}
+    <p>번호 : {{ article.pk }}</p>
+    <p>제목 : {{ article.title }}</p>
+    <p>내용 : {{ article.content }}</p>
+    <a href="{{ article.get_absolute_url }} ">DETAIL</a>
+    {% comment %} <a href="/articles/{{ article.pk ]}"></a> {% endcomment %}
+    
+    <hr>
+
+  {% endfor %}
+{% endblock content %}
