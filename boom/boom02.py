@@ -10,4 +10,4 @@ for tc in range(1):
     arr = [list(map(int, input().split())) for _ in range(N)]
 
     for j in range(N):
-        arr[j][j]
+        print(arr[j][j])
