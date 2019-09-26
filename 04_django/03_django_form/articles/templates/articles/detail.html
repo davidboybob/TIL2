@@ -8,10 +8,33 @@
 <p>{{ article.create_at|date:"SHORT_DATE_FORMAT" }}</p>
 <p>{{ article.updated_at|date:"M, j, y" }}</p>
 
+
+
 <a href="{% url 'articles:update' article.pk %}">[UPDATE]</a>
 <form action="{% url 'articles:delete' article.pk %}" method="POST">
-{% csrf_token %}
-<input type="submit" value="DELETE">
+  {% csrf_token %}
+  <input type="submit" value="DELETE">
+</form>
+
+<hr>
+
+{% for comment in comments %}
+<div>댓글 {{ forloop.revcounter }} : {{ comment.content }}
+<form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST" style="display:inline">
+  {% csrf_token %}
+  <input type="submit" value="DELETE">
+</form>
+</div>
+{% empty %}
+<p><b>댓글이 없습니다.</b></p>
+{% endfor %}
+
+<hr>
+
+<form action="{% url 'articles:comments_create' article.pk %}" method="POST">
+  {% csrf_token %}
+  {{ comment_form }}
+  <input type="submit" value="submit">
 </form>
 
 <a href="{% url 'articles:index' %}">[BACK]</a>
