@@ -411,3 +411,48 @@ Action과 Javascript
 
 
 
+
+
+## :baby_chick: ​6. Bixby Capsule Endpoints
+
+### :hatching_chick: 6.1 Bixby Casule Endpoints
+
+#### 6.1.1 Endpoints 개요
+
+​	**EndPoints란?**
+
+모델링한 Acion과 Business Logit을 연결해 주는 역할
+
+Bixby Language 구현
+
+​	**Enpoints의 종류**
+
+- Local Endpoint
+- Remote Endpoint
+
+
+
+#### 6.1.2 Enpoints의 종류
+
+- Local Endpoints
+  - 캡슐 내부의 리소스나 코드를 사용하는 형태
+  - 발화에 알맞는 내부의 자바스크립트 코드를 찾아서 결과를 반환
+- Remote Endpoint
+  - 빅스비 내부 캡슐을 거치지 않고, 직접 API를 호출하여 결과를 반환
+- 예시
+
+![Endpoints 예시](https://user-images.githubusercontent.com/52685322/65817657-079f1e00-e245-11e9-9570-b3d3181a3f13.jpg)
+
+
+
+### :hatching_chick: 6.2  Bixby Capsule로 외부서버 연동하기
+
+#### 6.2.1 Remote Endpoints
+
+- 직접 API 서버를 연동, 따로 빅스비캡슐의 모델링에 대응 하는 비지니스 로직을 작성할 필요 x
+- API서버를 가져오는 OUPUT 컨솔은 필요
+
+
+
+#### 6.2.2 JavaScript HTTP
+
