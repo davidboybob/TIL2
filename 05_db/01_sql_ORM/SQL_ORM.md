@@ -94,7 +94,6 @@ TIL
 
 
 
-
 ---
 
 
@@ -115,20 +114,26 @@ TIL
 
    ```python
    # orm
+   User.objects.all().values()
    ```
 
       ```sql
    -- sql
+   sqlite> SELECT * FROM user_users
       ```
 
 2. user 레코드 생성
 
    ```python
    # orm
+   user = User(id=102, first_name='진영', last_name='박', age=28, country='대전', phone='010-1234-5678', balance=100000)
+   
+   user.save()
    ```
 
    ```sql
    -- sql
+   INSERT INTO users_user VALUES (101, '선잔', '박', '28', '대전', '010-6666-6666', 0);
    ```
 
    * 하나의 레코드를 빼고 작성 후 `NOT NULL` constraint 오류를 orm과 sql에서 모두 확인 해보세요.
@@ -139,10 +144,12 @@ TIL
 
    ```python
    # orm
+   User.objects.get(pk=101)
    ```
 
    ```sql
    -- sql
+   SELECT * FROM users_user WHERE id=101;
    ```
 
 4. 해당 user 레코드 수정
@@ -152,10 +159,14 @@ TIL
 
    ```python
    # orm
+   user = User.objects.get(pk=101)
+   user.last_name = '김'
+   user.save()
    ```
 
       ```sql
    -- sql
+   UPDATE users_user SET first_name='성진' WHERE id=101;
       ```
 
 5. 해당 user 레코드 삭제
@@ -165,10 +176,12 @@ TIL
 
    ```python
    # orm
-   ```
-
+   
+```
+   
    ```sql
    -- sql
+   DELETE FROM users_user WHERE id=101;
    ```
 
 
