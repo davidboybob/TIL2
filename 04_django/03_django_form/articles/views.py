@@ -6,8 +6,17 @@ from .models import Article, Comment
 from .forms import ArticleForm, CommentForm
 from IPython import embed
 
+import hashlib
+
 # Create your views here.
 def index(request):
+    #-------------------- hashlib // gravatar-----------------------
+    # if request.user.is_authenticated:
+    #     gravatar_url = hashlib.md5(request.user.email.encode('utf-8').lower().strip()).hexdigest()
+    # else:
+    #     gravatar_url = None
+
+
     # embed()
     #------------ 인증 ------------------
     # session 에 visits_num 키로 접근해 값을 가져온다.
@@ -23,7 +32,7 @@ def index(request):
     #articles = get_list_or_404(Article)
 
 
-    context = {'articles': articles, 'visits_num': visits_num,}
+    context = {'articles': articles, 'visits_num': visits_num,} # 'gravatar_url': gravatar_url 중복 없애기 부분
 
     return render(request, 'articles/index.html', context)
 
@@ -133,3 +142,22 @@ def comments_delete(request, article_pk, comment_pk):
             comment.delete()
         return redirect('articles:detail', article_pk)
     return HttpResponse('You are Unauthorized', status=401)
+
+
+def like(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+    
+    #django 최적화 o
+    if article.like_users.filter(pk=request.user.pk).exists(): #get은 빈값일 때 오류가 뜨기 떄문에 사용 x
+        article.like_users.remove(request.user)
+    else:
+        article.like_users.add(request.user)
+    return redirect('articles:index')
+
+    #in 을 이용한 방법 최적화 x
+    # #해당 게시글에 좋아요를 누른 살마들 중에서 현재 접속유저가 있다면 좋아요를 취소
+    # if request.user in article.like_users.all():
+    #     article.like_users.remove(request.user) # 좋아요 취소 
+    # else:
+    #     article.like_users.add(request.user) # 좋아요 
+    # return redirect('articles:index')

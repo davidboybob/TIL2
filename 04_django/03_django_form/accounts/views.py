@@ -3,8 +3,8 @@ from django.views.decorators.http import require_POST
 from django.contrib.auth import login as auth_login, logout as auth_logout
 from django.contrib.auth import logout as auth_logout
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UserChangeForm, PasswordChangeForm
-from .forms import CustomUserChangeForm
+from django.contrib.auth.forms import  AuthenticationForm, PasswordChangeForm  # UserCreationForm,  UserChangeForm, 
+from .forms import CustomUserChangeForm, CustomUserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import update_session_auth_hash
 
@@ -16,7 +16,7 @@ def signup(request):
    
     if request.method == 'POST':
         # embed()
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             # form.save() 를 통해 변환된 user 클래스의 인스턴스를 auth_login의 인자로 전달
             user = form.save()
@@ -24,7 +24,7 @@ def signup(request):
 
             return redirect('articles:index')
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
     context = {'form': form}
     return render(request, 'accounts/auth_forms.html', context)
 
