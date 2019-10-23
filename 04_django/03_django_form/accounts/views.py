@@ -1,4 +1,6 @@
 from IPython import embed
+from django.contrib.auth import get_user_model
+from django.shortcuts import get_object_or_404
 from django.views.decorators.http import require_POST
 from django.contrib.auth import login as auth_login, logout as auth_logout
 from django.contrib.auth import logout as auth_logout
@@ -69,6 +71,7 @@ def update(request):
     context = {'form': form,}
     return render(request, 'accounts/auth_forms.html', context)
 
+
 @login_required
 def change_password(request):
     if request.method == 'POST':
@@ -81,4 +84,11 @@ def change_password(request):
         form = PasswordChangeForm(request.user)
     context = {'form': form,}
     return render(request, 'accounts/auth_forms.html', context)
+
+
+@login_required
+def profile(request, username):
+    person = get_object_or_404(get_user_model(), username=username)
+    context = {'person': person,}
+    return render(request, 'accounts/profile.html', context)
 

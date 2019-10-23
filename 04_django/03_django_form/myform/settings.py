@@ -125,3 +125,4 @@ SESSION_SAVE_EVERY_REQUEST = True #기본값 FALSE
 STATIC_URL = '/static/'
 
 #AUTH_USER_MODEL = 'auth.User' #기본값 => 굳이 작성할 필요 없음.
+AUTH_USER_MODEL = 'accounts.user'

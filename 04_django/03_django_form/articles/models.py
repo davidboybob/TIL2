@@ -31,6 +31,6 @@ class Comment(models.Model):
     class Meta:
         ordering = ('-pk',)
 
-        def __str__(self):
-            return self.content
+    def __str__(self):
+        return self.content
 
