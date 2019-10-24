@@ -1,0 +1,17 @@
+{% extends 'articles/base.html' %}
+
+{% block content %}
+  <h1>Index</h1>
+  <p><b>당신의 방문 횟수 : {{ visit_num }} {% if visit_num == 1 %}time{% else %}times{% endif %}</b></p>
+  {% if user.is_authenticated %}
+    <a href="">[New]</a>
+    <hr>
+  {% else %}
+    <a href="">[새 글을 작성하려면 로그인 하세요.]</a>
+  {% endif %}
+  {% for article in articles %}
+    {% include 'articles/_article.html' %}
+  {% endfor %}
+
+
+{% endblock content %}

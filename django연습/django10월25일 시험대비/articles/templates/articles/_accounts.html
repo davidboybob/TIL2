@@ -1,0 +1,17 @@
+{% if user.is_authenticated %}
+  <h3>
+    Hello, {{ user.username }}
+    <a href="">modify_userinfo</a>
+    <a href="">Chang_password</a>
+    <a href="">Logout</a>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="회원탈퇴">
+    </form>
+  </h3>
+{% else %}
+  <h3>
+    <a href="">Login</a>
+    <a href="">Signup</a>
+  </h3>
+{% endif %}
