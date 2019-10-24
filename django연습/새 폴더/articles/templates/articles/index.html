@@ -1,0 +1,32 @@
+{% extends 'articles/base.html' %}
+{% block content %}
+  <h1>INDEX</h1>
+  <hr>
+  {% if user.is_authenticated %}
+    <a href="{% url 'articles:create' %}">[NEW]</a>
+  {% else %}
+    <a href="">[새 글을 작성하기 위해서는 로그인이 필요합니다.]</a>
+  {% endif %}  
+
+  {% for article in articles %}
+    <p>{{ article.pk }}</p>
+    <p>{{ article.title }}</p>
+    <p>{{ article.content }}</p>
+    <p>{{ article.created_at }}</p>
+    <p>{{ article.updated_at }}</p>
+
+  
+    <a href="">
+      {% if user in article.like_user.all %}
+        좋아요 감사합니다.
+      {% else %}
+        좋아요 해주세요  
+      {% endif %}
+    </a>
+    <p>{{ article.like_user.all|length }}</p>
+
+    <hr>
+    <a href="{% url 'articles:detail' article.pk %}">[DETAIL]</a>
+
+  {% endfor %}
+{% endblock %}

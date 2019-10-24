@@ -1,4 +1,5 @@
 {% extends 'articles/base.html' %}
+{% load make_link %}
 {% load bootstrap4 %}
 
 {% block content %}
@@ -6,7 +7,7 @@
 <hr>
 <p>{{ article.pk }}</p>
 <p>{{ article.title }}</p>
-<p>{{ article.content }}</p>
+<p>{{ article|hashtag_link|safe }}</p>
 <p>{{ article.create_at|date:"SHORT_DATE_FORMAT" }}</p>
 <p>{{ article.updated_at|date:"M, j, y" }}</p>
 
