@@ -9,8 +9,8 @@
   <p>{{ article.updated_at }}</p>
   <hr>
   {% if request.user == article.user %}
-    <a href="">[UPDATE]</a>
-    <form action="" method="POST">
+    <a href="{% url 'articles:update' article.pk %}">[UPDATE]</a>
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
       {% csrf_token %}
       <input type="submit" value="Delete">
     </form>

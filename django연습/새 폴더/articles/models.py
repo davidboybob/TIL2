@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.conf import settings
 # Create your models here.
 class Article(models.Model):
@@ -12,6 +13,8 @@ class Article(models.Model):
     class Meta:
         ordering = ('-pk',)
 
+    def get_absolute_url(self):
+        return reverse('articles:detail', kwargs={'article_pk': self.pk})
     
 class Comment(models.Model):
     aritcle = models.ForeignKey(Article, on_delete=models.CASCADE)

@@ -3,8 +3,6 @@ from .models import Article, Comment
 
 
 class ArticleForm(forms.ModelForm):
-    title = forms.CharField()
-    content = forms.CharField()
 
     class Meta:
         model = Article
