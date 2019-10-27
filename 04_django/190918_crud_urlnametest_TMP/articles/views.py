@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from .models import Article, Comment
 # Create your views here.
 def index(request):
-  # embed()
+  embed()
   # articles = Article.objects.all()[::-1]
   articles = Article.objects.order_by('-pk')
   context = {'articles': articles,}

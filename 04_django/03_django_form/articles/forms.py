@@ -51,7 +51,7 @@ class ArticleForm(forms.ModelForm):
     class Meta:
         model = Article
         # fields = {'title', 'content',}
-        fields = '__all__'
+        fields = ('title', 'content',)
         # exclude = ('tilte',)
 
 

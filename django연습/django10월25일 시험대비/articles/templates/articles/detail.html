@@ -1,0 +1,45 @@
+{% extends 'articles/base.html' %}
+
+{% block content %}
+  <h1>DETAIl</h1>
+  <p>{{ article.pk }}</p>
+  <p>{{ article.title }}</p>
+  <p>{{ article.content }}</p>
+  <p>{{ article.crearted_at }}</p>
+  <p>{{ article.updated-at }}</p>
+  {% if request.user == article.user %}
+    <a href="">[UPDATE]</a>
+    <form action="#" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="DELETE">
+    </form>
+  {% endif %}
+  <hr>
+  {% for comment in comments %}
+    <div class="">
+      댓글 {{ forloop.revcounter }} : {{ comment.content }}
+      {% if request.user == comment.user %}
+        <form action="" method="POST">
+          {% csrf_token %}
+          <input type="submit" value="DELETE">
+        </form>
+      
+      {% endif %}
+    </div>
+  
+    {% empty %}
+      <p><b>댓글이 없습니다.</b></p>
+  {% endfor %}
+  <hr>
+  {% if user.is_authenticated %}
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{ comment_form }}
+      <input type="submit" value="Submit">
+    </form>
+  {% else %}
+    <a href="">[댓글을 작성하려면 로그인하세요]</a>
+  {% endif %}
+  <hr>
+  <a href="{% url 'articles:index' %}">[BACK]</a>
+{% endblock content %}

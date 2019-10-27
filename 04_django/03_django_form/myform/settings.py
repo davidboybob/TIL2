@@ -32,7 +32,13 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'articles.apps.ArticlesConfig',
-    'bootstrap4',
+    'accounts.apps.AccountsConfig',
+    'bootstrap4',    
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.kakao',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -68,6 +76,11 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'myform.wsgi.application'
 
@@ -115,8 +128,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+# 모든 곳에서 request.session.modified = True 를 기본 값으로 사용하고 싶다면, 다음과 같이 설정 
+SESSION_SAVE_EVERY_REQUEST = True #기본값 FALSE
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#AUTH_USER_MODEL = 'auth.User' #기본값 => 굳이 작성할 필요 없음.
+AUTH_USER_MODEL = 'accounts.user'
+LOGIN_REDIRECT_URL = 'articles:index'

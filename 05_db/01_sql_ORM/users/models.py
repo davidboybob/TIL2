@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Avg
 
 # Create your models here.
 class User(models.Model):
