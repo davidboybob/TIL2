@@ -178,11 +178,21 @@ TIL
 
    ```python
    # orm
+<<<<<<< HEAD
+   
+   ```
+```
+   
+   
+   -- sql
+   DELETE FROM users_user WHERE id=101;
+=======
    User.objects.get(pk=102).delete()
    ```
 ```sql
 -- sql
 DELETE FROM users_user WHERE id=101;
+>>>>>>> 22d4cdeece2af6662dace2373e6cf5f0a6867624
 ```
 
 
