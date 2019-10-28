@@ -368,7 +368,7 @@ Out[25]: <QuerySet [{'first_name': '은정'}]>
    # orm
    User.objects.order_by('-last_name', '-first_name')[4]
    ```
-```
+```sql
    
       ```sql
    -- sql
