@@ -1,0 +1,58 @@
+- model: musics.artist
+  pk: 1
+  fields:
+    name: maroon5
+- model: musics.artist
+  pk: 2
+  fields:
+    name: Queen
+- model: musics.music
+  pk: 1
+  fields:
+    artist: 1
+    title: Girls like you
+- model: musics.music
+  pk: 2
+  fields:
+    artist: 2
+    title: bohemian repsody
+- model: musics.music
+  pk: 3
+  fields:
+    artist: 2
+    title: radio gaga
+- model: musics.music
+  pk: 4
+  fields:
+    artist: 1
+    title: telephone
+- model: musics.music
+  pk: 5
+  fields:
+    artist: 1
+    title: good good
+- model: musics.comment
+  pk: 1
+  fields:
+    music: 1
+    content: "\uB313\uAE00\uC744 \uC218\uC815\uD574 \uBCF4\uC790\u3147\u3147\u3147\u3139\u3147\u3139\u3147\u3139\u3139"
+- model: musics.comment
+  pk: 2
+  fields:
+    music: 2
+    content: "\uB313\uAE00\uC744 \uC218\uC815\uD574 \uBCF4\uC790"
+- model: musics.comment
+  pk: 3
+  fields:
+    music: 3
+    content: "\uB808\uB514\uC624 \uAC00\uAC00 \uB808\uC774\uC624 \uD234"
+- model: musics.comment
+  pk: 6
+  fields:
+    music: 1
+    content: "\uB313\uAE00\uC744 \uBCF4\uB0B4\uBCF4\uC790!!!!!!2233"
+- model: musics.comment
+  pk: 7
+  fields:
+    music: 1
+    content: "\uB313\uAE00\uC744 \uBCF4\uB0B4\uBCF4\uC790!!!!!!222"
