@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="app">
+    <img :src="vueImage" alt="todo-list">
+    <li v-for="todo in todos" v-if="!todo.completed" v-on:click="check(todo)"> 
+      {{ todo.content }}
+      
+    </li>     
+    </li>
+    <li v-else v-on:click="check(todo)">[완료!]
+
+    </li>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        todos: [
+          {
+            content: '점심메뉴 고민',
+            completed: true,
+          },
+          {
+            content: '사다리 타기',
+            completed: false,
+          },
+          {
+            content: '낮잠 자기',
+            completed: false,
+          },
+          {
+            content: '야쟈 하기',
+            completed: false,
+          },
+        ],
+        vueImage: 'https://data.ac-illust.com/data/thumbnails/f3/f3d8580c1dcb94c2be9a5fb9c50f3105_t.jpeg'
+
+      },
+      methods: {
+        check: function(todo) {
+          todo.completed = !todo.completed 
+        }
+      },
+    })
+
+  </script>
+
+</body>
+</html>
