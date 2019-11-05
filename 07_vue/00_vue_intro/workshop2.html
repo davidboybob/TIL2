@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .red {
+      color: red;
+    }
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="app">
+    <button @click="plus">+1</button>
+    <p>Counter : {{ count }}</p>
+
+    <div class="static" v-bind:class="{ active: isActive, 'error': hasError}"></div>
+    <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
+
+    <button @click="toggleColor">Toggle</button>
+    <div :class=" red ? 'red' : 'blue' " >빨강과 파랑을 섞으면 보라색이 됩니다.</div>
+    <div :class=" {red: blue} " >빨강과 파랑을 섞으면 보라색이 됩니다.</div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        count: 0,
+        isActive: true,
+        hasError: false,
+        
+        fontSize: 30,
+        
+        red: true,
+        activeColor: 'red',
+      },
+      methods: {
+        plus: function() {
+          this.count++ 
+        },
+        toggleColor: function () {
+          this.red = !this.red
+        },
+
+      },
+    })
+
+
+  </script>
+
+</body>
+</html>

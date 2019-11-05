@@ -6,4 +6,3 @@ for tc in range(1):
     N = int(input())
     EX = input()
 
-    
