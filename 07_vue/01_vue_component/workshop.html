@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,47 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-model="url">
-    <a :href="url">Go!</a>
+    <select v-model="selected">
+      <option v-for="option in options" :value="option.N">
+        {{ option.N }}
+      </option>
+    </select>
+    <button @click="getDogImage(selected)">Get {{ selected }} Dogs!</button>
+    <img v-for="image in images[0]" :src="image" alt="dogs" v-if="image">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
-    
+    const dog = function (selected) {
+      const URL = `https://dog.ceo/api/breeds/image/random/${selected}`
+      axios.get(URL)
+        .then(response => {
+          this.images.push(response.data.message)
+          
+        })
+        this.images = []
+    }
+
     const app = new Vue({
       el: '#app',
       data: {
-        url: '',
+        selected: 1,
+        options: [
+          { N: 1,},
+          { N: 2,},
+          { N: 3,},
+          { N: 4,},
+          { N: 5,},
+          { N: 6,},
+          { N: 7,},
+          { N: 8,},
+          { N: 9,},
+          ],
+        images: [],
+      },
+      methods: {
+        getDogImage: dog,
       }
       
     })
