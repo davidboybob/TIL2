@@ -9,8 +9,8 @@
 <body>
   <div id="app">
     <select v-model="selected">
-      <option v-for="option in options" :value="option.N">
-        {{ option.N }}
+      <option v-for="option in options">
+        {{ option }}
       </option>
     </select>
     <button @click="getDogImage(selected)">Get {{ selected }} Dogs!</button>
@@ -34,17 +34,7 @@
       el: '#app',
       data: {
         selected: 1,
-        options: [
-          { N: 1,},
-          { N: 2,},
-          { N: 3,},
-          { N: 4,},
-          { N: 5,},
-          { N: 6,},
-          { N: 7,},
-          { N: 8,},
-          { N: 9,},
-          ],
+        options: 100,
         images: [],
       },
       methods: {
