@@ -49,9 +49,26 @@
 3. SearchBar에서 넘어온 이벤트 inputChange로 인해 onInputChange 함수가 실행된다.
 4. onInputChange 함수는 유투브 api 에 요청을 보내고 비디오 리스트를 응답받는다.
 
+---
 
+5. 넘겨 받은 비디오 리스트를  videos라는 배열에 저장한다.
 
+   - Vue component에서는 반드시 Object를 return 하는 함수로 작성.
 
+6. `data` object가 (videos 배열이 있는 곳) 업데이트 되면, 해당 컴포넌트 (App.vue)가 템플릿을 다시 렌더링한다.
+
+7. 그리고 바로 자식 컴포넌트들도 모두 다시 렌더링 된다.
+
+8. `VideoList` 컴포넌트가 비디오 배열을 받아 화면에 보여주게 된다.
+
+   
 
 console.developers.google.com/
 
+
+
+### 보안
+
+.env.local 파일 안에 키값을 넣기
+
+- .env.local 파일은 .gitignore와 같은 경로 선상에 있어야 함.
