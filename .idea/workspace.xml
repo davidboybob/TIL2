@@ -4,7 +4,9 @@
     <list default="true" id="6ef46891-f67e-48a4-8bb5-163b21261322" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SWexpert/백준/17471. 게리멘더링.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWexpert/백준/17472. 다리만들기2.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SWexpert/백준/2661. 좋은수열.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWexpert/백준/input_17472.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SWexpert/백준/17471. 게리멘더링(풀이중).py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SWexpert/백준/input_17471.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SWexpert/백준/input_17471.txt" afterDir="false" />
     </list>
@@ -18,20 +20,21 @@
     <session id="-760953912">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="5" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="4" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -63,13 +66,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SWexpert/백준/2146. 다리만들기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+            <state relative-caret-position="288">
+              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SWexpert/백준/17472. 다리만들기2.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SWexpert/백준/input_17472.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,6 +121,7 @@
         <option value="$PROJECT_DIR$/SWexpert/백준/input_17471.txt" />
         <option value="$PROJECT_DIR$/SWexpert/백준/17471. 게리멘더링(풀이중).py" />
         <option value="$PROJECT_DIR$/SWexpert/백준/2661. 좋은수열.py" />
+        <option value="$PROJECT_DIR$/SWexpert/백준/17472. 다리만들기2.py" />
       </list>
     </option>
   </component>
@@ -250,7 +264,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298647" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,10 +316,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SWexpert/백준/2146. 다리만들기.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        <state relative-caret-position="288">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SWexpert/백준/17472. 다리만들기2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SWexpert/백준/input_17472.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
