@@ -36,11 +36,8 @@ for i in range(N):
 
 # island 섬 마다 번호가 생김.
 # Q 완성
-print(Q)
-pprint(island)
-
-
-dir = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+# print(Q, cnt)
+# pprint(island)
 
 
 # 다리 연결하기
@@ -52,15 +49,51 @@ dir = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
 # 방법 1. 각 섬에서 다른 섬으로 갈 수 있는 모든 다리의 수 저장 후, 최소인 값(데이터) 찾기
 # Q 이용하기
-def Bridge(data):
-    x, y, num = Q.pop(0):
-    while Q:
-        q = [(x, y, num)]
-        while q:
+
+# 데이터 저장
+G = [[100] * (cnt + 1) for _ in range(cnt + 1)]
+
+for x, y, num in Q:
+    for dx, dy in [(1, 0), (0, 1), (-1, 0), (0, -1)]:
+        nx, ny = x + dx, y + dy
+        d = 0
+        while 0 <= nx < N and 0 <= ny < M:
+            if island[nx][ny] == num:
+                break
+            if island[nx][ny]:
+                if 1 < d < G[num][island[nx][ny]]:
+                    G[num][island[nx][ny]] = G[island[nx][ny]][num] = d
+                break
+            d += 1
+            nx, ny = nx + dx, ny + dy
+
+# pprint(G)
+
+# PRIM
+key = [0] + [0xffff] * cnt
+pi = [0] * (cnt + 1)
+visited = [False] * (cnt + 1)
+key[1] = 0
+
+for _ in range(cnt):
+    u = MIN = 0xffff
+    for i in range(1, cnt + 1):
+        if not visited[i] and MIN > key[i]:
+            u, MIN = i, key[i]
+    if u == 0xffff: break
+
+    visited[u] = True
+
+    for i in range(1, cnt + 1):
+        if G[u][i] != 100 and not visited[i] and G[u][i] < key[i]:
+            key[i], pi[i] = G[u][i], u
+# print(visited)
+# print(key)
+
+if visited.count(True) == cnt: print(sum(key))
+else: print(-1)
 
 
-Bridge(Q)
-
-
+#--------------------- TRY 2 --------------
 
 

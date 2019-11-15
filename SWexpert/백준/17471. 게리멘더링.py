@@ -1,6 +1,6 @@
 import sys
 sys.stdin = open('input_17471.txt', 'r')
-
+'''
 def DFS(v, arr, visit):
     visit[v] = True
     for w in G[v]:
@@ -56,5 +56,62 @@ for tc in range(1, TC+1):
 
     subset(1, A, B)
     if Min == 10000:
+        Min = -1
+    print(Min)
+    
+'''
+# ------------------- Try 2-------------------
+
+TC = int(input())
+for tc in range(1, TC+1):
+    N = int(input())
+    P = [0] + list(map(int, input().split()))
+    Sum_A, Sum_B, Min = 0, 0, 0xffffff
+
+    G = [[] for _ in range(N+1)]
+
+    for i in range(1, N+1):
+        G[i] = list(map(int, input().split()))[1:]
+    # print(G)
+
+    # 검증
+    def DFS(s, arr, visit):
+        visit[s] = True
+
+        for i in G[s]:
+            if i in arr and not visit[i]:
+                visit[i] = True
+                DFS(i, arr, visit)
+
+
+    A, B = [], []
+    def subset(k, A, B):
+        if k == N+1:
+            global Sum_A, Sum_B, Min
+            if A and B:
+                visit = [False] *(N+1)
+                DFS(A[0], A, visit)
+                if visit.count(True) == len(A):
+                    for p in A:
+                        Sum_A += P[p]
+
+                visit = [False] * (N + 1)
+                DFS(B[0], B, visit)
+                if visit.count(True) == len(B):
+                    for p in B:
+                        Sum_B += P[p]
+
+                if Sum_A != 0 and Sum_B != 0:
+                    Min = min(Min, abs(Sum_A - Sum_B))
+                Sum_A = Sum_B = 0
+            return
+
+        subset(k + 1, A + [k], B)
+        subset(k + 1, A, B + [k])
+
+
+
+    subset(1, A, B)
+    if Min == 0xffffff:
         Min = -1
     print(Min)
