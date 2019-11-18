@@ -51,11 +51,11 @@ Number.isNaN(null) // false
 Number.isNaN(undefined)
 
 
-Number.isNaN(1 + null) // flase (숫자)
-Number.isNaN(1 + undefind) // true (숫자가 아님)
+console.log(Number.isNaN(1 + null)) // false (숫자)
+console.log(Number.isNaN(1 + undefined)) // true (숫자가 아님)
 
 
 
-Number.isNaN(NaN): //true
-Number.isNaN(Number.NaN): //true
-Number.isNaN(0 / 0): // true
+console.log(Number.isNaN(NaN)) //true
+console.log(Number.isNaN(Number.NaN)) //true
+console.log(Number.isNaN(0 / 0)) // true

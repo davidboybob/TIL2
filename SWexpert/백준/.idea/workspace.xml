@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="357aae5f-f0d8-4957-a706-ab6ea5adc6ab" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="357aae5f-f0d8-4957-a706-ab6ea5adc6ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/17142. 연구소3(풀이중).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_17142.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_js/00_js_intro/02_type_operators.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_js/00_js_intro/02_type_operators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_js/00_js_intro/04_loop.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_js/00_js_intro/04_loop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/백준.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/백준.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17472. 다리만들기2.py" beforeDir="false" afterPath="$PROJECT_DIR$/17472. 다리만들기2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_17472.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input_17472.txt" afterDir="false" />
+    </list>
+>>>>>>> a843b40cd77645e0c142e05e1fc8ea1a3b6117d3
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="-677678488">
       <usages-collector id="statistics.lifecycle.project">
@@ -62,21 +77,19 @@
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+>>>>>>> a843b40cd77645e0c142e05e1fc8ea1a3b6117d3
       <list>
-        <option value="$PROJECT_DIR$/../../../algorithm_problem/122.191014_Graph/PRIM.py" />
-        <option value="$PROJECT_DIR$/../../../algorithm_problem/122.191014_Graph/5249. 최소 신장 트리.py" />
-        <option value="$PROJECT_DIR$/../../../algorithm_problem/121.191010_Tree/5177. 이진힙.py" />
-        <option value="$PROJECT_DIR$/input_17472.txt" />
-        <option value="$PROJECT_DIR$/17471. 게리멘더링.py" />
-        <option value="$PROJECT_DIR$/17472. 다리만들기2.py" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="975" />
-    <option name="height" value="1087" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -96,6 +109,11 @@
       </pane>
       <pane id="Scope" />
     </panes>
+=======
+  <component name="ProjectId" id="1TeYmnbefWcWPoA7s1uAUccwLb9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+>>>>>>> a843b40cd77645e0c142e05e1fc8ea1a3b6117d3
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -113,8 +131,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.17471. 게리멘더링">
-    <configuration name="17471. 게리멘더링" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.17142. 연구소3(풀이중)">
+    <configuration name="15649.N과 M(1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="백준" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,53 +140,95 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/17471. 게리멘더링.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="17472. 다리만들기2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="백준" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/17472. 다리만들기2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PRIM" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="백준" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../algorithm_problem/122.191014_Graph" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../algorithm_problem/122.191014_Graph/PRIM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성/15649.N과 M(1).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15650. N과 M(2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="백준" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성/15650. N과 M(2).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15651. N과 M(3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="백준" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성/15651. N과 M(3).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15654. N과 M(5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="백준" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../algorithm_problem/보충/190919_목_조합생성/15654. N과 M(5).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="17142. 연구소3(풀이중)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="백준" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/17142. 연구소3(풀이중).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,15 +238,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.17472. 다리만들기2" />
-      <item itemvalue="Python.PRIM" />
-      <item itemvalue="Python.17471. 게리멘더링" />
+      <item itemvalue="Python.17142. 연구소3(풀이중)" />
+      <item itemvalue="Python.15649.N과 M(1)" />
+      <item itemvalue="Python.15650. N과 M(2)" />
+      <item itemvalue="Python.15651. N과 M(3)" />
+      <item itemvalue="Python.15654. N과 M(5)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.17471. 게리멘더링" />
-        <item itemvalue="Python.17472. 다리만들기2" />
-        <item itemvalue="Python.PRIM" />
+        <item itemvalue="Python.17142. 연구소3(풀이중)" />
+        <item itemvalue="Python.15650. N과 M(2)" />
+        <item itemvalue="Python.15651. N과 M(3)" />
+        <item itemvalue="Python.15654. N과 M(5)" />
+        <item itemvalue="Python.15649.N과 M(1)" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +267,7 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
@@ -290,5 +355,17 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> a843b40cd77645e0c142e05e1fc8ea1a3b6117d3
   </component>
 </project>

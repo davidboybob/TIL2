@@ -1,3 +1,4 @@
+'''
 from pprint import pprint
 
 import sys
@@ -93,7 +94,78 @@ for _ in range(cnt):
 if visited.count(True) == cnt: print(sum(key))
 else: print(-1)
 
-
+'''
 #--------------------- TRY 2 --------------
+from pprint import pprint
+
+import sys
+sys.stdin = open('input_17472.txt', 'r')
+
+N, M = map(int, input().split())
+island = [list(map(int, input().split())) for _ in range(N)]
+visit = [[False] * M for _ in range(N)]
 
 
+cnt = 0
+data = []
+def DFS(sx, sy, cnt):
+    island[sx][sy] = cnt
+    visit[sx][sy] = True
+    data.append((sx, sy, cnt))
+
+    for dx, dy in [(1, 0), (0, 1), (-1, 0), (0, -1)]:
+        nx, ny = sx + dx, sy + dy
+        if nx < 0 or nx >= N or ny < 0 or ny >= M: continue
+        if island[nx][ny] == 0: continue
+        if not visit[nx][ny]:
+
+            DFS(nx, ny, cnt)
+
+
+for i in range(N):
+    for j in range(M):
+        if not visit[i][j] and island[i][j] != 0:
+            cnt += 1
+            DFS(i, j, cnt)
+
+# pprint(island)
+# print(data)
+
+G = [[100] * (cnt + 1) for _ in range(cnt + 1)]
+# pprint(G)
+for sx, sy, num in data:
+    for dx, dy in [(1, 0), (0, 1), (-1, 0), (0, -1)]:
+        nx, ny = sx + dx, sy + dy
+        d = 0
+        while 0 <= nx < N and 0 <= ny < M:
+            if island[nx][ny] == num: break
+            if island[nx][ny]:
+                if 1 < d < G[num][island[nx][ny]]:
+                    G[num][island[nx][ny]] = G[island[nx][ny]][num] = d
+                break
+            d += 1
+            nx, ny = nx + dx, ny + dy
+print(G)
+key = [0] + [0xfffff] * cnt
+pi = [0] * (cnt + 1)
+visited = [False] * (cnt + 1)
+key[1] = 0
+for _ in range(cnt):
+    u = MIN = 0xffff
+    # 시작점 설정
+    for i in range(1, cnt + 1):
+        if not visited[i] and MIN > key[i]:
+            u, MIN = i, key[i]
+
+    if u == 0xffff: break # 한개도 다리 건설 못했을 경우
+
+    visited[u] = True
+
+    for i in range(1, cnt + 1):
+        if G[u][i] != 100 and not visited[i] and G[u][i] < key[i]:
+            key[i], pi[i] = G[u][i], u
+print(key)
+print(pi)
+print(visited)
+if visited.count(True) == cnt: print(sum(key))
+else: print(-1)

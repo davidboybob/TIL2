@@ -25,4 +25,3 @@ for (let number of [0, 1, 2, 3, 4, 5]) {
 for (const number of [0, 1, 2, 3, 4, 5]) {
   console.log(number)
 }
-
