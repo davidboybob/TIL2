@@ -92,7 +92,7 @@ xxxx.yyyy.zzzz
 
 ### 정의
 
-- 한 도메인에서 로드되어 다른 도메인에 있는 리소스와 상호 작용 하늑서.
+- 한 도메인에서 로드되어 다른 도메인에 있는 리소스와 상호 작용 하는 것.
 - 즉, 도메인이나 포트가 다른 서버의 자원을 요청하는 메커니즘
 
 ### 문제상황
@@ -106,3 +106,77 @@ xxxx.yyyy.zzzz
 1. 서버(django)와 클라이언트(vue)가 같은 도메인과 포트를 사용하도록 한다.
 2. 서버에서 cross-origin HTTP 요청을 허가하낟. (우리가 해결할 방법)
    - 실제 API 서버들은 이러한 CORS 제한과 관련된 처리를 모두 해두어야 한다.
+   - 
+
+
+
+
+
+2일차
+
+<img width="807" alt="Screen Shot 2019-11-19 at 10 31 41 AM" src="https://user-images.githubusercontent.com/52685322/69108747-f93ce800-0ab8-11ea-8fe2-6db61f51e26c.png">
+
+DRF
+
+DRF-jwt
+
+cors
+
+### Vue-session
+
+` this.$session.start() `
+
+- session-id 초기화. 만약 세션이 없이 저장하려고 하면 vue-session 플러그인이 자동으로 새로운 세션을 시작
+
+`this.$session.set(key,value)`
+
+- session에 해당 key에 맞는 값을 저장
+
+` this.$session.has(key)`
+
+- key(JWT)가 존재하는지 여부를 확인
+
+` this.$session.destroy() `
+
+- 세션을 삭제
+
+---
+
+0. Django
+   - 회원가입
+1. Vue -> Django
+   - 로그인 정보(credentials)를 django 서버로 보냄
+2. Django
+   - Vue에서 받은 윶정보에 해당하는 고유한 Web Token 발급
+3. Django -> Vue
+   - 해당 유저에 대한 토큰을 Vue로 보냄
+4. Vue
+   - django에서 받은 토큰을 vue-session을 통해 저장( 이 시점부터 vue에서는 로그인 성공 상태)
+5. Vue -> Django
+   - vue-session에 저장된 토큰을 가지고 django에 로그인 요청
+6. Django
+   - 최초로 보낸 토큰과 일치하는지 여부를 확인(session에 저장된 토큰 == 요청자의 토큰) => 일치하면 로그인
+
+---
+
+`.start()`를 통해 `session-id:sess` + `Date.now()` 가 만들어짐
+
+`.set()` 을 통해 `jwt: jwt 값` 이 만들어짐
+
+---
+
+Vue의 라이프 사이클
+
+1. Vue instance 생성 (create)
+2. DOM에 부착(mounted)
+3. 업데이트(updated)
+4. 삭제(destroy)
+
+---
+
+FormData (Create, 필요한 정보 받아오기)
+
+- 기존 키에 새로운 값을 추가하거나 키가 없느 ㄴ경우 새로운 키를 추가.(`FormData.append()`)
+- `FormData.append(name,value)`
+- name: 
+- 

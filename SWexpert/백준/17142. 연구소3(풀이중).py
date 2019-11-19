@@ -79,16 +79,16 @@ for tc in range(TC):
 
         # print(Ml)
         Min = min(Ml, Min)
-        print(Min)
+        # print(Min)
         # pprint(Labor)
         # pprint(visit)
         # pprint(D)
-        pprint(visit)
+        # pprint(visit)
         for i in range(N):
             for j in range(N):
                 if Labor[i][j] != 1 and Labor[i][j] != 2 and not visit[i][j]:
-                    pprint(D)
-                    Min = -1
+                    # pprint(D)
+                    
 
     for i in data:
         BFS(i)
