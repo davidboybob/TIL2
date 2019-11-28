@@ -2,6 +2,7 @@
 {% load bootstrap4 %}
 {% block content %}
 <h1 class="text-center">{{ person.username }}'s PROFILE</h1>
+
 <hr>
 <h3 class="text-center">{{ person.username }}이 작성한 글</h3>
 <div class="row">
@@ -20,7 +21,6 @@
   {% endfor %}
 {% endwith %}
 </div>
-
 
 <hr>
 

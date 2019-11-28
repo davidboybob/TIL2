@@ -207,4 +207,3 @@ def hashtag(request, hash_pk):
     context = {'hashtag': hashtag, 'articles': articles,}
     return render(request, 'articles/hashtag.html', context)
     
-    
