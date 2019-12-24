@@ -29,6 +29,7 @@ def DFS(r, c, d, number):
 
     for rotation in range(4):
         d += rotation % 4
+        print(d)
         dx, dy = dir[d][0], dir[d][1]
         nx, ny = r + dx, c + dy
         d -= 1
