@@ -12,9 +12,9 @@
       <div class="form-group">
         <label for="id">ID : </label>
         <input 
-          type="text" 
-          class="form-control" 
-          id="id" 
+          type="text"
+          class="form-control"
+          id="id"
           placeholder="아이디를 입력해 주셍요"
           v-model="credentials.username"
           
