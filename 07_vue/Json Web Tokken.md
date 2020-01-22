@@ -147,7 +147,7 @@ cors
 1. Vue -> Django
    - 로그인 정보(credentials)를 django 서버로 보냄
 2. Django
-   - Vue에서 받은 윶정보에 해당하는 고유한 Web Token 발급
+   - Vue에서 받은 유저정보에 해당하는 고유한 Web Token 발급
 3. Django -> Vue
    - 해당 유저에 대한 토큰을 Vue로 보냄
 4. Vue
