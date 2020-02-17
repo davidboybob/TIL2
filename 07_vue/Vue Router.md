@@ -59,5 +59,13 @@ export default router
 
 
 
-1. 
+```vue
+// App.vue
+
+<template>
+  <router-view></router-view>  
+</template>
+
+
+```
 
