@@ -366,3 +366,6 @@ public/
 
 # DynamoDB Local files
 .dynamodb/
+
+#Pycharm
+.idea
