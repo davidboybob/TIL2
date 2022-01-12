@@ -184,3 +184,196 @@ https://onlinelab.e-koreatech.ac.kr/tutorial/java?id=102
 
   
 
+## 2.2 변수와 상수
+
+- 변수
+
+```java
+int a;
+String b;
+```
+
+
+
+- 변수명
+
+  - 변수의 이름은 프로그래머가 마음대로 지을 수 있다. 
+  - 단, 변수의 이름을 지을 때는 다음과 같이 지켜야 할 몇가지 규칙이 있다.
+    - 변수명은 숫자로 시작할 수 없다.
+    - _(underscore) 와 $ 문자 이외의 특수문자는 사용할 수 없다.
+    - 자바의 키워드는 변수명으로 사용할 수 없다. (예: int, class, return 등)
+
+  > java keywords
+  >
+  > `abstract` `assert` `boolean` `break` `byte` `case` `catch` `class` `const` `continue`
+  >
+  > `default` `do` `double` `else` `enum` `extends` `final` `finally` `float` `for`
+  >
+  > `goto` `if` `implements` `imports` `instanceof` `int` `interface` `long`
+  >
+  > `native` `new` `package` `private` `protected` `public` `return` `short` `static`
+  >
+  > `strictfp` `super` `switch` `synchronized` `this` `throw` `transient` `try` `void` `volatile` `while`
+
+  잘못된 변수 명 사용 예시
+
+  ```java
+  int 1st; // 변수명은 숫자로 시작할 수 없다.
+  int a#; // 변수명은 특수문자를 사용할 수 없다.
+  int class; // 키워드를 변수명으로 사용할 수 없다.
+  ```
+
+- 자료형 (Type)
+
+  - 변수명 앞의 int, String 등은 변수의 자료형(Type) 을 뜻한다.
+  - `int a;`라는 문장은 다음과 같이 해석된다.
+
+  > 변수 a 는 자료형 변수이다. 즉, a라는 변수에는 int자료형 값(1, 10, 25 등의 정수값) 만 담을 수 있다.
+
+  - `String b;` 라는 문장은 다음과 같이 해석된다.
+
+  > 변수 b는 String 자료형 변수이다. 즉, b라는 변수에는 String 자룔형 값("a", "hello" 등의 문자열)만 담을 수 있다.
+
+- 변수에 값 대입하기
+
+  - 변수 선언 후 다음과 같이 변수에 값을 대입할 수 있다.
+
+  ```java
+  int a;
+  String b;
+  
+  a = 1;
+  b = "hello java";
+  ```
+
+  - 변수에 값을 대입할 때는 위의 예에서와 같이 `=`(assignment) 기호를 사용한다.
+
+  ```
+  a = 1; // int 자료형 변수 a에 1이라는 값을 대입한다.
+  b = "Hello java"; // String 자료형 변수 b에 "Hello java" 라는 값을 대입한다.
+  ```
+
+  - 선언과 동시에 대입
+
+  ```java
+  int a = 1;
+  String b = "hello java";
+  ```
+
+- 자주 쓰이는 자료형
+
+  - 자료형에는 int, String 외에도 많은 자료형이 있다.
+    - int
+    - long
+    - double
+    - boolean
+    - char
+    - String
+    - StringBuffer
+    - ArrayList
+    - HashMap
+  - ex) sb 변수는 StringBuffer 자료형 변수이다. sb 변수에는 StringBuffer 자료형에 해당되는 값만 담을 수 있다.
+
+- 사용자 정의 자료형
+
+  ```
+  class Animal {
+  
+  }
+  
+  Animal cat; //자료형 변수 생성
+  ```
+
+  - cat 이라는 변수는 Animal 자료형 변수이다. cat이라는 변수에는 Animal 자료형에 해당되는 값만 담을 수 있다.
+
+- 상수 (Constant)
+
+  - 프로그램이 실행되는 동안(선언과 값설정을 동시에 했다면) 값을 변경할 수 없는 것을 말한다.
+  - 쉽게 말해 다시 재정의가 불가능 한 변환되지 않는 값을 말함
+  - `int number = 8;`
+
+- 상수 만드는 방법
+
+  - Final 메소드를 사용하여 만드는 변수를 상수라고 합니다.
+    - `final int number = 100;`
+
+- 상수를 사용하고 에러가 나는 경우
+
+```java
+public class Constant {
+    public static void main(String[] args) {
+        //final을 자료형 앞에 붙이면 상수의 값이 고정되어 변화 되지 않는다.
+        final String name = "홍길동";
+        System.out.printIn(name);
+        name = "이순신";
+        System.out.printIn(name);
+    }
+}
+```
+
+
+
+
+
+# 2.3 대입연사자와 산술 연산자
+
+- 연산자 (Operators)
+
+  - 자바는 변수들을 다루는 여러가지 연산자를 제공
+
+- 산술 연산자(Mathematical Operators)
+
+  - +, -, *, /, %(나머지)
+  - 자바에서 산술연산을 할 떄 주의 해야 할 것은 연산하는 변수들의 변수형과 자동으로 수행되는 캐스팅(Casting) 이 두가지가 있다.
+  - 변수형에 신경 쓰면서 연산을 수행시켜야 원하는 결과값을 도출
+
+- 대입 연산자 (Assignment Operators)
+
+  - 변수를 초기화하거나 어떤 값을 대입할 경우 대입 연산자를 이용한다. 숫자형의 변수인 경우에는 "=" 이외에도 여러가지 다른 유용한 대입 연산자가 제공된다.
+  - `=` : 등호 ex) x=y=x=0
+  - `+=` : 덧셈연산 후 대입 (x=1; x+=2 ; // 결과 : x=3)
+  - `-=` : 뺄셈 연산 후 대입
+  - `/=` : 나눗셈 연산 후 대입. 여기서 캐스팅에 주의해야 합니다.
+  - `*=` : 곱셈연산 후 대입
+  - `%=` : 나머지연산 후 대입
+  - `^=` : XOR 비트 연산 후 대입
+  -  `&=` : AND 비트연산 후 대입
+  - `|=` : OR 비트연산 후 대입
+  - `<<=` : left shift 연산 후 대입
+  - `>>=` : Right Shift 연산 후 대입
+  - `>>>=` : Right Shift 연산 후 0으로 비트를 채우고 대입
+
+- 증가와 감소
+
+  - 자바는 또한 증감 연산자를 제공합니다.
+  - prefix 방식과 postifx 방식이 있습니다.
+  - prefix : 그 변수가 증감되고 나서 연산이 실행되는 방식.
+  - postifx: 연산 후에 변수의 값이 증갑되는 방식
+  - 예시
+
+  ```java
+  int x = 3;
+  int y = 3;
+  int sum1 = 2 * x++; // sum1 is 6 and x is 4
+  int sum2 = 2 * ++y; // sum2 is 8 and y is 4
+  int sum3 = 2 * x--; // sum3 is 6 and x is 2
+  int sum4 = 2 * --y; // sum4 is 4 and y is 2
+  ```
+
+- 우선순위
+
+  - 1 : `++`, `--`, `~!`, `+` `-` `단항연산(unary)` `(type cast)` || 결합 순서 : R
+  - 2 :`*`, `/`, `%` || 결합 순서 : L
+  - 3 : `+`, `-`, `+ (결합)` || 결합 순서 : L
+  - 4 : `>>>`, `>>`, `<<` || 결합 순서 : L
+  - 5 : `<`, `<=`,  `>`,   `>=` || 결합 순서 : L
+  - 6 : `==`, `!=` || 결합 순서 : L
+  - 7 : `&` || 결합 순서 : L
+  - 8 : `^` || 결합 순서 : L
+  - 9 : `|` || 결합 순서 : L
+  - 10 : `&&` || 결합 순서 : L
+  - 11: `||` || 결합 순서 : L
+  - 12 : `?:` || 결합 순서 : R
+  - 13 : `=`,  `*=`,  `/=`,  `%=`,  `+=`,   `-=`,   `<<=`,   `>>=`,   `>>>=`,   `&=`,  `^=`,   `|=`, || 결합 순서 : R
+
+  
